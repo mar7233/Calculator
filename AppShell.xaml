@@ -1,0 +1,119 @@
+﻿<!-- AppShell.xaml -->
+<Shell
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Calculator"
+    x:Class="Calculator.AppShell"
+    FlyoutBehavior="Flyout"
+    FlyoutBackgroundColor="#F5F6F8"
+    FlyoutWidth="250">
+
+    <!-- ===================== FLYOUT BAŞLIĞI ===================== -->
+    <!-- Bu bölüm, Flyout menüsünün üst kısmında görünen başlıktır. 
+         Uygulama logosu ve adı burada yer alır. -->
+    <Shell.FlyoutHeader>
+        <Grid Padding="12" BackgroundColor="#F5F6F8">
+            <Grid.ColumnDefinitions>
+                <!-- İki sütun tanımlandı: biri resim için, biri metinler için -->
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Uygulama logosu -->
+            <Image Source="calculator.png"
+                   WidthRequest="36"
+                   HeightRequest="36"
+                   VerticalOptions="Center" />
+
+            <!-- Uygulama adı ve alt metin -->
+            <StackLayout Grid.Column="1" VerticalOptions="Center" Padding="10,0,0,0">
+                <Label Text="Calculator"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       TextColor="#333" />
+                <Label Text="calc.app"
+                       FontSize="12"
+                       TextColor="#777" />
+            </StackLayout>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <!-- ===================== HESAP MAKİNESİ BÖLÜMÜ ===================== -->
+    <!-- Bu kısım, hesap makinesi modlarının başlıklarını ve alt sayfalarını tanımlar. -->
+
+    <!-- Bölüm başlığı (sadece metin, tıklanamaz) -->
+    <FlyoutItem Title="Calculator" IsEnabled="False" />
+
+    <!-- Standart Hesap Makinesi Menüsü -->
+    <!-- Kullanıcı "Standard" seçeneğine tıkladığında ilgili sayfa açılır. -->
+    <FlyoutItem Title="   Standard"
+                Icon="calculator.png"
+                Route="Standard">
+        <!-- Burada hangi sayfanın yükleneceği belirtiliyor -->
+        <ShellContent
+            Title="Standard"
+            ContentTemplate="{DataTemplate local:StandardCalculatorPage}"
+            Route="StandardPage" />
+    </FlyoutItem>
+
+    <!-- Bilimsel Hesap Makinesi Menüsü -->
+    <!-- "Scientific" seçeneği için aynı yapı kullanılır. -->
+    <FlyoutItem Title="   Scientific"
+                Icon="flask.png"
+                Route="Scientific">
+        <ShellContent
+            Title="Scientific"
+            ContentTemplate="{DataTemplate local:ScientificCalculatorPage}"
+            Route="ScientificPage" />
+    </FlyoutItem>
+
+    <!-- ===================== DÖNÜŞTÜRÜCÜLER BÖLÜMÜ ===================== -->
+    <!-- Henüz uygulanmamış dönüştürücü araçlarının başlıkları burada tanımlanır. -->
+    <FlyoutItem Title="Converter" IsEnabled="False" />
+
+    <!-- Para Birimi Dönüştürücü -->
+    <!-- Henüz yapılmadığı için sadece bilgi mesajı gösterilir. -->
+    <MenuItem Text="   Currency"
+              IconImageSource="currency.png"
+              Command="{Binding ShowMessageCommand}"
+              CommandParameter="Currency converter is not available." />
+
+    <!-- Hacim Dönüştürücü -->
+    <MenuItem Text="   Volume"
+              IconImageSource="volume.png"
+              Command="{Binding ShowMessageCommand}"
+              CommandParameter="Volume converter is not implemented." />
+
+    <!-- ===================== GELECEK ÖZELLİKLER (COMING SOON) ===================== -->
+    <!-- Kullanıcı tıkladığında bilgilendirme mesajı gösteren öğeler. -->
+    <MenuItem Text="Graphing"
+              IconImageSource="graph.png"
+              Command="{Binding ShowMessageCommand}"
+              CommandParameter="Graphing calculator is not available yet." />
+
+    <MenuItem Text="Programmer"
+              IconImageSource="code.png"
+              Command="{Binding ShowMessageCommand}"
+              CommandParameter="Programmer mode is not implemented yet." />
+
+    <MenuItem Text="Date Calculation"
+              IconImageSource="calendar.png"
+              Command="{Binding ShowMessageCommand}"
+              CommandParameter="Date calculation tool is coming soon." />
+
+    <!-- ===================== ALT MENÜ (SETTINGS) ===================== -->
+    <!-- Ayarlar butonu burada bulunur. Kullanıcı tıkladığında bir olay tetiklenir. -->
+    <Shell.FlyoutFooter>
+        <StackLayout Padding="8">
+            <!-- Görsel ayrım çizgisi -->
+            <BoxView HeightRequest="1" Color="#E0E0E0" HorizontalOptions="Fill" />
+
+            <!-- Ayarlar Butonu -->
+            <Button Text="Settings"
+                    ImageSource="gear.png"
+                    Clicked="OnSettingsClicked"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Fill" />
+        </StackLayout>
+    </Shell.FlyoutFooter>
+</Shell>

@@ -1,0 +1,31 @@
+﻿<ContentPage
+    x:Class="Calculator.EmptyPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Coming Soon"
+    BackgroundColor="#FFFFFF">
+
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Spacing="20">
+
+        <!-- Bu Image bileşeni, bir bilgi simgesi (info.png) görüntüler. 
+             Genişlik ve yükseklik 80 birim olarak ayarlanmıştır ve Opacity ile şeffaflık %80 olarak tanımlanmıştır.
+             Kullanıcıya henüz uygulanmamış bir sayfa olduğunu görsel olarak bildirmek için kullanılır. -->
+        <Image Source="info.png"
+               WidthRequest="80"
+               HeightRequest="80"
+               Opacity="0.8" />
+
+        <!-- Bu Label bileşeni, sayfanın henüz uygulanmadığını belirten bir metin gösterir.
+             Yazı boyutu 20 olarak ayarlanmıştır, metin rengi #555 (orta gri) olarak tanımlanmıştır ve yatayda ortalanmıştır.
+             Kullanıcıya sayfanın mevcut olmadığını açıkça iletmek için kullanılır. -->
+        <Label
+            Text="This page is not yet implemented."
+            FontSize="20"
+            TextColor="#555"
+            HorizontalTextAlignment="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
