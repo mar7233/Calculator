@@ -60,10 +60,10 @@
               HorizontalOptions="FillAndExpand" VerticalOptions="Center">
 
             <!-- Trigonometri modu -->
-            <Button Text="△ Trigonometry" Grid.Column="0" Clicked="OnShowTrigonometry" HorizontalOptions="FillAndExpand" HeightRequest="50" BackgroundColor="Black"/>
+            <Button Text="△ Trigonometry" Grid.Column="0" Clicked="OnShowTrigonometry" HorizontalOptions="FillAndExpand" HeightRequest="50" BackgroundColor="#333333" TextColor="White"/>
 
             <!-- Fonksiyon modu -->
-            <Button Text="ƒ Function" Grid.Column="1" Clicked="OnShowFunction" HorizontalOptions="FillAndExpand" HeightRequest="50" BackgroundColor="Black"/>
+            <Button Text="ƒ Function" Grid.Column="1" Clicked="OnShowFunction" HorizontalOptions="FillAndExpand" HeightRequest="50" BackgroundColor="#333333" TextColor="White"/>
         </Grid>
 
         <!-- ==================== ANA BUTONLAR (Trigonometri Modu) ==================== -->
@@ -83,38 +83,38 @@
             <Button Text="cos⁻¹" Grid.Row="0" Grid.Column="4" Clicked="OnFunctionClicked" BackgroundColor="Gray"/>
 
             <!-- Parantez, silme ve temizleme işlemleri -->
-            <Button Text="tan⁻¹" Grid.Row="1" Grid.Column="0" Clicked="OnFunctionClicked" BackgroundColor="Black"/>
-            <Button Text="(" Grid.Row="1" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text=")" Grid.Row="1" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="C" Grid.Row="1" Grid.Column="3" Clicked="OnClearClicked" BackgroundColor="Black"/>
-            <Button Text="⌫" Grid.Row="1" Grid.Column="4" Clicked="OnBackspaceClicked" BackgroundColor="Gainsboro"/>
+            <Button Text="tan⁻¹" Grid.Row="1" Grid.Column="0" Clicked="OnFunctionClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="(" Grid.Row="1" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text=")" Grid.Row="1" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="C" Grid.Row="1" Grid.Column="3" Clicked="OnClearClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="⌫" Grid.Row="1" Grid.Column="4" Clicked="OnBackspaceClicked" BackgroundColor="Gainsboro" TextColor="Black"/>
 
             <!-- Üs ve kök işlemleri -->
-            <Button Text="x²" Grid.Row="2" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="²√x" Grid.Row="2" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="x^y" Grid.Row="2" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="10^x" Grid.Row="2" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="±" Grid.Row="2" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="Gainsboro"/>
+            <Button Text="x²" Grid.Row="2" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="²√x" Grid.Row="2" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="x^y" Grid.Row="2" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="10^x" Grid.Row="2" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="±" Grid.Row="2" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="Gainsboro" TextColor="Black"/>
 
             <!-- Sayısal tuşlar ve temel işlemler -->
             <Button Text="7" Grid.Row="3" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="8" Grid.Row="3" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="9" Grid.Row="3" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
-            <Button Text="÷" Grid.Row="3" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="×" Grid.Row="3" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="Gainsboro"/>
+            <Button Text="÷" Grid.Row="3" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="×" Grid.Row="3" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="Gainsboro" TextColor="Black"/>
 
             <Button Text="4" Grid.Row="4" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="5" Grid.Row="4" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="6" Grid.Row="4" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
-            <Button Text="-" Grid.Row="4" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="+" Grid.Row="4" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="Gainsboro"/>
+            <Button Text="-" Grid.Row="4" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="+" Grid.Row="4" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="Gainsboro" TextColor="Black"/>
 
             <!-- Son satır: = butonu -->
             <Button Text="1" Grid.Row="5" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="2" Grid.Row="5" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="3" Grid.Row="5" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="0" Grid.Row="5" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
-            <Button Text="=" Grid.Row="5" Grid.Column="4" Clicked="OnEqualsClicked" BackgroundColor="Gainsboro"/>
+            <Button Text="=" Grid.Row="5" Grid.Column="4" Clicked="OnEqualsClicked" BackgroundColor="Gainsboro" TextColor="Black"/>
         </Grid>
 
         <!-- ==================== FONKSİYON BUTONLARI (GİZLİ) ==================== -->
@@ -127,47 +127,47 @@
               IsVisible="False">
 
             <!-- Üs, kök, mutlak değer ve faktöriyel işlemleri -->
-            <Button Text="x²" Grid.Row="0" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="²√x" Grid.Row="0" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="x^y" Grid.Row="0" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="10^x" Grid.Row="0" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="Black"/>
+            <Button Text="x²" Grid.Row="0" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="²√x" Grid.Row="0" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="x^y" Grid.Row="0" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="10^x" Grid.Row="0" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
             <Button Text="±" Grid.Row="0" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
 
             <!-- Ters alma, mutlak değer, faktöriyel, parantez -->
-            <Button Text="1/x" Grid.Row="1" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="|x|" Grid.Row="1" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="n!" Grid.Row="1" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="(" Grid.Row="1" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text=")" Grid.Row="1" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="Black"/>
+            <Button Text="1/x" Grid.Row="1" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="|x|" Grid.Row="1" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="n!" Grid.Row="1" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="(" Grid.Row="1" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text=")" Grid.Row="1" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
 
             <!-- Sabitler ve logaritmik fonksiyonlar -->
-            <Button Text="π" Grid.Row="2" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="e" Grid.Row="2" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="exp" Grid.Row="2" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="log" Grid.Row="2" Grid.Column="3" Clicked="OnFunctionClicked" BackgroundColor="Black"/>
-            <Button Text="ln" Grid.Row="2" Grid.Column="4" Clicked="OnFunctionClicked" BackgroundColor="Black"/>
+            <Button Text="π" Grid.Row="2" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="e" Grid.Row="2" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="exp" Grid.Row="2" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="log" Grid.Row="2" Grid.Column="3" Clicked="OnFunctionClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="ln" Grid.Row="2" Grid.Column="4" Clicked="OnFunctionClicked" BackgroundColor="#333333" TextColor="White"/>
 
             <!-- Sayılar ve işlemler -->
             <Button Text="7" Grid.Row="3" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="8" Grid.Row="3" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="9" Grid.Row="3" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
-            <Button Text="÷" Grid.Row="3" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="×" Grid.Row="3" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="Black"/>
+            <Button Text="÷" Grid.Row="3" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="×" Grid.Row="3" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
 
             <Button Text="4" Grid.Row="4" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="5" Grid.Row="4" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="6" Grid.Row="4" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
-            <Button Text="-" Grid.Row="4" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="+" Grid.Row="4" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="Black"/>
-            <Button Text="=" Grid.Row="4" Grid.Column="5" Clicked="OnEqualsClicked" BackgroundColor="Black"/>
+            <Button Text="-" Grid.Row="4" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="+" Grid.Row="4" Grid.Column="4" Clicked="OnButtonClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="=" Grid.Row="4" Grid.Column="5" Clicked="OnEqualsClicked" BackgroundColor="#333333" TextColor="White"/>
 
             <!-- Temizleme ve geri silme butonları -->
             <Button Text="1" Grid.Row="5" Grid.Column="0" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="2" Grid.Row="5" Grid.Column="1" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="3" Grid.Row="5" Grid.Column="2" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
             <Button Text="0" Grid.Row="5" Grid.Column="3" Clicked="OnButtonClicked" BackgroundColor="Gray"/>
-            <Button Text="C" Grid.Row="5" Grid.Column="4" Clicked="OnClearClicked" BackgroundColor="Black"/>
-            <Button Text="⌫" Grid.Row="5" Grid.Column="5" Clicked="OnBackspaceClicked" BackgroundColor="Black"/>
+            <Button Text="C" Grid.Row="5" Grid.Column="4" Clicked="OnClearClicked" BackgroundColor="#333333" TextColor="White"/>
+            <Button Text="⌫" Grid.Row="5" Grid.Column="5" Clicked="OnBackspaceClicked" BackgroundColor="#333333" TextColor="White"/>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
