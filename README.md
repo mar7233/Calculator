@@ -5,6 +5,14 @@ A cross-platform calculator built with .NET MAUI, modeled on a desktop calculato
 ![C#](https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=white)
 ![.NET MAUI](https://img.shields.io/badge/.NET_MAUI-512BD4?logo=dotnet&logoColor=white)
 
+## Screenshots
+
+| Standard | Scientific |
+|---|---|
+| ![Standard mode](docs/screenshots/standard.png) | ![Scientific mode](docs/screenshots/scientific.png) |
+
+![Navigation menu](docs/screenshots/menu.png)
+
 ## Features
 
 **Standard mode**
@@ -21,10 +29,15 @@ A cross-platform calculator built with .NET MAUI, modeled on a desktop calculato
 
 ## Run
 
+Requirements: .NET 10 SDK with the MAUI workload (included in Visual Studio's ".NET Multi-platform App UI development" workload).
+
 ```bash
 dotnet workload install maui
-dotnet build -t:Run -f net8.0-android
+dotnet build -t:Run -f net10.0-windows10.0.19041.0   # Windows
+dotnet build -t:Run -f net10.0-android               # Android
 ```
+
+On Windows, turn on Developer Mode (Settings → System → For developers) to run the app from Visual Studio.
 
 ---
 
